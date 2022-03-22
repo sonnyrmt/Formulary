@@ -44,6 +44,12 @@ body {
   padding: 10px;
 }
 
+#mensaje {
+  height: 100px;
+  max-height: 200px;
+  min-height: 50px;
+}
+
 .d-grid {
   margin-top: 20px;
   width: 80%;
@@ -52,6 +58,7 @@ body {
 .mb-11 button {
   margin: 30px 50px;
 }
+
 
 .spinner-border {
   visibility: hidden;
