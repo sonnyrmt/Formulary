@@ -63,17 +63,21 @@ const sendAnimation = (e) => {
   e.preventDefault();
   spinner.classList.add("show");
 
-  setInterval(function () {
+  setTimeout(function() {
     spinner.classList.remove("show");
   }, 2000);
 
-  const myInterval = setInterval(function () {
+  setTimeout(function() {
     success.classList.add("show");
   }, 2100);
-
-  setInterval(function () {
-    clearInterval(myInterval);
-  }, 2200);
+  
+  if(e.target) {
+    success.classList.remove("show");
+  }
+  
+  setTimeout(function() {
+    success.classList.remove("show");
+  }, 10000);
 
 };
 
